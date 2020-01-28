@@ -45,6 +45,33 @@
             <artifactId>h2</artifactId>
         </dependency>
 
+        <!-- Spring Boot Starter for GraphQL  -->
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphql-spring-boot-starter</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+
+        <!-- Explicit Add GraphQL Tools -->
+        <dependency>
+            <groupId>com.graphql-java-kickstart</groupId>
+            <artifactId>graphql-java-tools</artifactId>
+            <version>5.4.1</version>
+        </dependency>
+
+        <!-- GraphQL Custom Type Support -->
+        <dependency>
+            <groupId>com.zhokhov.graphql</groupId>
+            <artifactId>graphql-datetime-spring-boot-starter</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+
+        <!-- Reactive Stream Implementation for GraphQL Subcriptions -->
+        <dependency>
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

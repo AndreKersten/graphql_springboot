@@ -1,3 +1,15 @@
+#Configure GraphQL
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+    subscriptions:
+      websocket:
+        path: /graphql
+  tools:
+    schemaLocationPattern: "**/*.graphql"
+
 ## JPA Database Configuration
 spring:
   jpa:
