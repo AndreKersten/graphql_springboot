@@ -24,7 +24,7 @@ public class RouteController {
         this.routeRepository = routeRepository;
     }
 
-    @GetMapping("\routes")
+    @GetMapping("routes")
     public List<Route> routes() {
         return routeRepository.findAll();
 
