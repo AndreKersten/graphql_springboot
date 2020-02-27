@@ -36,6 +36,7 @@ public class RootMutationResolver implements GraphQLMutationResolver {
         Route route = routeRepository.findById(id).get();
         route.setDeparture(departure);
         routeRepository.save(route);
+        routeUpdatePublisher.emit(route);
         return route;
     }
 
@@ -44,6 +45,7 @@ public class RootMutationResolver implements GraphQLMutationResolver {
         route.setDeparture(input.getDeparture());
         route.setDestination(input.getDestination());
         routeRepository.save(route);
+        routeUpdatePublisher.emit(route);
         return route;
     }
 
